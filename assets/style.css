@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+/* Header */
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+header .navbar {
+    border-bottom: 1px #f3f3f3 solid;
+}
+
+header ul.navbar-nav {
+    margin: 0 auto;
+    /*text-align: center;*/
+}
+
+.navbar-nav .nav-item {
+    width: 115px;
+}
+
+.navbar-nav li .navbar-brand {
+    display: none;
+}
+
+header ul .navbar-brand img,
+.phone-brand img {
+    width: 140px;
+    height: 46px;
+}
+
+header .navbar div .phone-brand {
+    margin: 0;
+}
+
+/* Body */
+body {
+    padding: 70px 0;
+}
+
+.page-content {
+    margin-top: 50px;
+}
+
+.page-content div div {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.page-content div .about-text:first-child {
+    margin-bottom: 5em;
+}
+
+.page-content .home-image img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.page-content .about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-content .about-text:last-child {
+    text-align: left;
+}
+
+.page-content .about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.page-content .about-text i {
+    padding-right: 1.3em;
+}
+
+.page-content .about-text i:after {
+    display: inline-block;
+    margin-left: -1.3em;
+}
+
+/* Contact */
+#contact {
+    margin-top: 20px;
+}
+
+#contact .contact-kontakt {
+    margin-bottom: 20px;
+}
+
+#contact .contact-heading {
+    margin-bottom: 20px;
+}
+
+#contact div ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact div li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#contact div ul li p {
+    font-size: 20px;
+}
+
+.contact-icons ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.contact-icons ul li .facebook-icon i:hover {
+    color: #0060cb;
+    transition: 300ms;
+}
+
+.contact-icons ul li .instagram-icon i:hover {
+    color: #fc7800;
+    transition: 300ms;
+}
+
+.contact-icons ul li .youtube-icon i:hover {
+    color: #fe3410;
+    transition: 300ms;
+}
+
+#contact-form .contact-form-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*Blog*/
+
+.page-content div .blog-form .sticky-top {
+    top: 120px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px #f3f3f3 solid;
+}
+
+.page-content .blog-content .blog-post {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    border: 1px #f3f3f3 solid;
+}
+
+.page-content .blog-content .edit-buttons {
+    position: absolute;
+}
+
+.page-content .blog-content .edit-buttons a {
+    color: inherit;
+}
+
+.page-content .blog-content .edit-buttons a i.bi-pen:hover {
+    color: #198754;
+}
+
+.page-content .blog-content .edit-buttons a i.bi-trash-fill:hover {
+    color: #dc3545;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-top: 1px #f3f3f3 solid;
+}
+
+#copyright {
+    margin-top: 10px;
+}
+
+#copyright div div:first-child p {
+    text-align: left;
+}
+
+#copyright div div:last-child p {
+    text-align: right;
+}
+
+a.back-to-top {
+    color: inherit;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 10;
+    display: block;
+    opacity: .3;
+}
+
+a.back-to-top:hover {
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+
+    header ul .navbar-brand {
+        margin: 0;
+        padding: 0 50px;
+    }
+
+    ul.navbar-nav li a,
+    #copyright div p {
+        font-size: 20px;
+    }
+
+    #contact {
+        margin-top: 50px;
+    }
+
+    #contact .contact-kontakt {
+        margin-bottom: 0;
+    }
+
+    #contact .contact-heading {
+        margin-bottom: 40px;
+    }
+
+    #contact-form .contact-form-textfield {
+        margin-bottom: 10px;
+    }
+
+    #contact-form .contact-form-button button {
+        width: 100%;
+    }
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+    .phone-brand {
+        display: none;
+    }
+
+    .navbar-nav li .navbar-brand {
+        display: block;
+    }
+
+    .page-content .about-text:last-child {
+        padding-left: 5em;
+    }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+    .page-content .about-text:last-child {
+        font-size: 1.3em;
+    }
+
+}
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+    .page-content .about-text:last-child {
+        padding-left: 3em;
+        font-size: 2em;
+    }
+
+}
